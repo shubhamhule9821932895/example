@@ -14,13 +14,29 @@ var navSlide = function () {
                 links.style.animation = `navLinkFade 0.5s ease forwards ${index / 6 + 0.4}s`;
             }
         })
-
-        burger.classList.toggle('toggle');
-        
+        burger.classList.toggle('toggle');   
     });
+ };
 
 
+//blogs carousel =========================================================================================
 
-    
-  };
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
+  //==================================================================
   navSlide();

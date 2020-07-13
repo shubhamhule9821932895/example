@@ -2,33 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1 , maximum-scale=1 " />
     <title>Personal Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous"/>
     <link rel="stylesheet" href="personalportfolio.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <header class="fixed-top">
       <nav>
         <div class="logo">
-          <h4>The NAV</h4>
+          <h4>THE NAV</h4>
         </div>
         <ul class="nav-links">
-          <li><a href="#">about us</a></li>
-          <li><a href="#">skills</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">blogs</a></li>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">contact us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -38,7 +33,7 @@
       </nav>
     </header>
 
-    <!--<section id="hero" class="d-flex align-items-center">
+    <section id="hero" class="d-flex align-items-center">
       <div class="container">
         <div id="main">
           <div class="content">
@@ -56,50 +51,144 @@
           <img src="man.png" alt="main" />
         </div>
       </div>
-    </section>-->
-    <section id="about me" style="margin-top: 10vh;">
+    </section>
+    <section id="about-me" style="margin-top: 10vh;">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-image">
-                <img src="man.png" alt="" />
+          <div class="col-md-6 about-img">
+              <div class="profile-img">
+                <img src="man.png" alt=""  class="img-fluid">
               </div>
-            </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 about-data">
             <div id="abt-content">
               <h3>ABOUT ME</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                consequatur vel, atque ad optio ipsum nulla sed corrupti eum
-                dignissimos exercitationem eos accusantium neque. Id, optio
-                ipsum, iure debitis laborum veritatis, magnam recusandae et
-                laboriosam sint neque soluta repellendus! Ratione itaque at
-                similique tenetur nam blanditiis fuga iste consequatur vel.
+                To enhance my professional skills ,capabilities and knowledge in an
+                organisation which recognizes the value of hard work and trusts me with 
+                responsibilities and challenges.
               </p>
             </div>
             <div id="info">
-              <p><strong>FULL NAME:</strong>MR.SANSKAR BADJATIA</p>
+              <p><strong>FULL NAME:</strong>MR.SHUBHAM HULE</p>
               <br />
-              <p><strong>AGE:</strong>19</p>
+              <p><strong>AGE:</strong>18</p>
               <br />
-              <p><strong>CONTACT NO.:</strong>8378919375</p>
+              <p><strong>CONTACT NO.:</strong>9653251316</p>
               <br />
-              <p><strong>EMAIL ID</strong>sanskarmbadjatia@gmail.com</p>
+              <p><strong>EMAIL ID</strong>shubhamhule9821932895@gmail.com</p>
               <br />
-              <button class="btn" id="resume">DOWNLOAD RESUME</button>
+              <button type="button" class="btn" id="resume">DOWNLOAD RESUME</button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+
+  <!-- ======================================         skills         ====================================                -->
+
+
+    <section id="portfolio">
+      <div class="container">
+        <div id="skills">
+          <h3>My Skills</h3>
+          <div class="row">
+            <div class="col-4"><span>html5</span></div>
+            <div class="col-4"><span>css3</span></div>
+            <div class="col-4"><span>js </span></div>
+          </div>
+          <div class="row">
+            <div class="col-4"><span>bootsrap4</span></div>
+            <div class="col-4"><span>jquery</span></div>
+            <div class="col-4"><span>github</span></div>
+          </div>
+        </div>
+
+        <div id="passion">
+          <h3>PASSION</h3>
+          <div>
+            <p>
+              <span><i class="fas fa-book"></i></span>
+              Learning
+            </p>
+          </div>
+          <div>
+            <p>
+              <span><i class="fas fa-laptop-code"></i></span>
+              Technology
+            </p>
+          </div>
+          <div>
+            <p>
+              <span><i class="far fa-futbol"></i></span>
+              Playing Sports
+            </p>
+          </div>
+        </div>
+
+
+        <div id="language">
+          <h3>Language</h3>
+          <div class="row">
+            <div class="col-4">
+            <h6> English</h6> 
+              Fluent
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+            <h6> Hindi</h6> 
+              Fluent
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--========================================       blogs carousel     =========================================-->
+
+    <section id="blogs">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="imgbx">
+                <img src="man.png" alt="">
+              </div>
+              <div class="details">
+                barrel rocks
+              </div>
+           </div>
+          <div class="swiper-slide"> </div>
+          <div class="swiper-slide"> </div>
+           
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+<!--    ======================================= JAVASCRIPT=========================-->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="personalportfolio.js"></script>
+    <script src="https://kit.fontawesome.com/f0932be404.js" crossorigin="anonymous"></script>
+    
   </body>
 </html>
 
-<!--
 
-
-          -->
