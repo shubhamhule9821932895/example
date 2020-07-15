@@ -223,50 +223,82 @@ nav {
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+
+.cardo{
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 400px;
-  background-color: rgb(255, 183, 49);
+  background-color:rgb(255, 183, 49);;
+}
+.carde{
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  background-color:rgb(40, 45, 41);
 }
 .imgbx {
   width: 300px;
   height: 300px;
 }
+.imgbx img{
+  width: 300px;
+  height: 300px;
+}
 #blogs {
-  height: 100vh;
+  height: 70vh;
+  background-color: rgb(226, 226, 226);
 }
 
-.details button {
+.details-o{
   text-align: center;
-
-  border: 2px solid rgb(40, 45, 41);
+  font-family: "Poppins", sans-serif;
+  word-spacing: 4px;
+  font-size: 1.2rem;
+}
+.details-e{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  word-spacing: 4px;
+  font-size: 1.2rem;
+  color: rgb(226, 226, 226);
+}
+.read-more-o{
+  text-align: center;
+  color: rgb(105,105,105);
+  border-bottom: 3px solid transparent;
   font-weight: bold;
   background-color: rgb(226, 226, 226);
   position: relative;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: 25%;
+  
+  border-radius: 15px;
+  transition: all 0.8 ease;
 }
-/*micro interaction*/
-.wrapper {
+
+.read-more-o:hover{
+  transform: translateY(-3px);
+  border-color: black;
+}
+
+.read-more-e{
+  text-align: center;
+  color: black;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+  background-color: rgb(226, 226, 226);
   position: relative;
-  height: 56px;
-  width: 150px;
+  top: 50%;
+  left: 25%;
+  
+  border-radius: 15px;
+  transition: all 0.8 ease;
 }
-.wrapper:hover .button-center {
-  transform: translate(0, -10px);
+
+.read-more-e:hover{
+  transform: translateY(-3px);
+  border-color: rgb(255, 183, 49);
 }
-.shadow {
-  position: absolute;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-}
-.button-center {
-  position: relative;
-  z-index: 2;
-  transition: transform 0.35s;
-}
+
