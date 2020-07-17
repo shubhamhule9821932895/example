@@ -184,7 +184,7 @@ nav {
     width: 96vw;
   }
 }
-#abt-content h3{
+#abt-content h3 {
   text-align: center;
   padding: 5% 0;
   font-weight: bolder;
@@ -214,6 +214,35 @@ nav {
 }
 
 /*   ====================================      SKILLS        =========================================          */
+.part-1 {
+  background-color: rgb(255, 183, 49);
+  height: 45vh;
+}
+.part-2 {
+  background-color: rgb(40, 45, 41);
+  color: rgb(226, 226, 226);
+  height: 45vh;
+}
+.items {
+  position: relative;
+  left: 40%;
+  font-size: 1.5rem;
+}
+#skills h3 {
+  text-align: center;
+}
+#outer-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 30vh;
+}
+#skills .container .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*  =======================================      CAROUSEL FOR THE BLOGS     =====================================   */
 
@@ -223,50 +252,53 @@ nav {
   padding-top: 50px;
 }
 
-
-.cardo{
+.cardo {
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 400px;
-  background-color:rgb(255, 183, 49);
+  background-color: rgb(255, 183, 49);
 }
-.carde{
+.carde {
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 400px;
-  background-color:rgb(40, 45, 41);
+  background-color: rgb(40, 45, 41);
 }
 .imgbx {
   width: 300px;
   height: 300px;
 }
-.imgbx img{
+.imgbx img {
   width: 300px;
   height: 300px;
 }
 #blogs {
-  height: 67vh;
-  background-image: linear-gradient(45deg,rgba(255, 183, 49,0), rgba(255, 183, 49,1));
+  height: 75vh;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 183, 49, 0),
+    rgba(255, 183, 49, 1)
+  );
 }
 
-.details-o{
+.details-o {
   text-align: center;
   font-family: "Poppins", sans-serif;
   word-spacing: 4px;
   font-size: 1.2rem;
 }
-.details-e{
+.details-e {
   text-align: center;
   font-family: "Poppins", sans-serif;
   word-spacing: 4px;
   font-size: 1.2rem;
   color: rgb(226, 226, 226);
 }
-.read-more-o{
+.read-more-o {
   text-align: center;
-  color: rgb(105,105,105);
+  color: rgb(105, 105, 105);
   border-bottom: 3px solid transparent;
   font-weight: bold;
   background-color: rgb(226, 226, 226);
@@ -277,12 +309,12 @@ nav {
   transition: all 0.8 ease;
 }
 
-.read-more-o:hover{
+.read-more-o:hover {
   transform: translateY(-3px);
   border-color: black;
 }
 
-.read-more-e{
+.read-more-e {
   text-align: center;
   color: black;
   border-bottom: 3px solid transparent;
@@ -295,50 +327,26 @@ nav {
   transition: all 0.8 ease;
 }
 
-.read-more-e:hover{
+.read-more-e:hover {
   transform: translateY(-3px);
   border-color: rgb(255, 183, 49);
 }
-@media screen and (max-width:1024px){
-  #blogs{
+@media screen and (max-width: 1024px) {
+  #blogs {
     height: 40vh;
   }
 }
-@media screen and (max-width:768px){
-  #blogs{
+@media screen and (max-width: 768px) {
+  #blogs {
     height: 51vh;
   }
 }
 
-@media screen and (max-width:576px){
-  #blogs{
+@media screen and (max-width: 576px) {
+  #blogs {
     height: 80vh;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -367,7 +375,8 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #eb5d1e;
 }
 
